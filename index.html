@@ -934,18 +934,30 @@
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-
+<!-- 
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112153.10932651343!2d76.90517247710946!3d28.79997028381851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d089d701f55ed%3A0x88c8c64d76c219b3!2sNational%20Institute%20of%20Technology%2C%20Delhi!5e0!3m2!1sen!2sin!4v1719226295000!5m2!1sen!2sin"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
-        </section>
+        </section> -->
+
+        <section class="mapbox" data-mapbox>
+  <figure>
+    <iframe
+      src="https://www.google.com/maps?q=National+Institute+of+Technology+Delhi&output=embed"
+      width="400"
+      height="300"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </figure>
+</section>
 
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
-          <form action="#" class="form" data-form>
+          <!-- <form action="#" class="form" data-form>
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
@@ -955,7 +967,46 @@
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-          </form>
+          </form> -->
+          <form
+  action="https://formspree.io/f/mnjqbejq"
+  method="POST"
+  class="form"
+>
+  <div class="input-wrapper">
+    <input
+      type="text"
+      name="fullname"
+      class="form-input"
+      placeholder="Full name"
+      required
+    >
+
+    <input
+      type="email"
+      name="email"
+      class="form-input"
+      placeholder="Email address"
+      required
+    >
+  </div>
+
+  <textarea
+    name="message"
+    class="form-input"
+    placeholder="Your Message"
+    required
+  ></textarea>
+
+  <!-- optional: redirect after submit -->
+  <input type="hidden" name="_next" value="https://gauriiiiiiiiiiii.github.io/Portfolio/?sent=true">
+
+  <button class="form-btn" type="submit">
+    <ion-icon name="paper-plane"></ion-icon>
+    <span>Send Message</span>
+  </button>
+</form>
+
         </section>
 
       </article>
